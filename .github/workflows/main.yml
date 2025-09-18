@@ -9,8 +9,11 @@ jobs:
     steps:
       - name: My First Step
         run: printenv
-      - name: my Second command
+      - name: My Second Step
         run: |
           echo "hello world" 
           echo "hi" > hello.txt
           ls 
+          echo hello.txt
+      - name: Sleep 
+        run: sleep 20
