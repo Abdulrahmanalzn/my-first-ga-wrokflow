@@ -1,0 +1,16 @@
+name: My First Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  myFirstJob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My First Step
+        run: printenv
+      - name: my Second command
+        run: |
+          echo "hello world" 
+          echo "hi" > hello.txt
+          ls 
